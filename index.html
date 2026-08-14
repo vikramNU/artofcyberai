@@ -1,286 +1,243 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora|Pacifico">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-        <title>AOCA</title>
-    </head>
-    <body>
-        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
-            <div class="container-fluid">
-                <div class="navbar-collapse">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link btn btn-outline-dark text-white buttonBorder" href="#"><h3>I am AI</h3></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-outline-dark mx-2 text-white buttonBorder" href="#profile"><h3>About</h3></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-outline-dark mx -2 text-white buttonBorder" href="#projects"><h3>Projects</h3></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="d-flex align-items-center justify-content-center flex-column">
-            <h1 class="text-white mt-5 pt-4 display-1"><b>Welcome</b></h1>
-            <h3 class="text-white display-4">to</h3>
-            <div class="neon-wrapper">
-                <span class="txt">Art of Cyber-AI</span>
-                <span class="gradient"></span>
-                <span class="dodge"></span>
-            </div>
-          </div>
-              <div class="row thumbnail">
-                <div class="col px-0">
-                  <img src="images/brainLeft.png" class=" leftimage responsive">
-                </div>
-                <div class="col px-1">
-                  <img src="images/brainRight.png" class="rightimage responsive">
-                </div>
-                  <div class="caption"><b>SOTA<br> is <br>here</b></div>
-              </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vikram Kharvi is an applied AI researcher and engineer building reliable foundation-model systems, RL environments, and production AI infrastructure.">
+  <meta name="theme-color" content="#e8e0d0">
+  <title>Vikram Kharvi — Applied AI Field Notes</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="paper-grain" aria-hidden="true"></div>
 
-        <div id="profile"></div>
-        <div class="card mb-3 black text-white glow border border-5 m-5 p-3 app" >
-          <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-2 m-5">
-              <img src="images/profile.jpg" class="img-fluid rounded-circle" alt="Cinque Terre">
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="monogram" href="#top" aria-label="Vikram Kharvi, home">VK<span class="ink-dot"></span></a>
+    <div class="nav-links">
+      <a href="https://blog.artofcyberai.com/">Blog</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+    </div>
+    <a class="nav-site" href="https://blog.artofcyberai.com/" target="_blank" rel="noreferrer">Read blog <span aria-hidden="true">↗</span></a>
+  </nav>
+
+  <header class="hero" id="top">
+    <p class="margin-code" aria-hidden="true">FIELD NOTES / 2026</p>
+    <div class="hero-copy reveal is-visible">
+      <p class="eyebrow"><span></span> Applied AI researcher + engineer</p>
+      <h1>I build AI systems that survive contact with the <em>real world.</em></h1>
+      <p class="hero-deck">From reinforcement-learning environments to foundation-model training and evaluation—six years turning ambitious research into infrastructure that works.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://blog.artofcyberai.com/">Explore the research series <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="mailto:vikramkrishnakharvi@gmail.com">Start a conversation <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="current-work" href="https://blog.artofcyberai.com/">
+        <span><i aria-hidden="true"></i> Currently building</span>
+        <strong>RL environments that help LLMs learn from real tasks, feedback, and failure.</strong>
+        <b aria-hidden="true">→</b>
+      </a>
+    </div>
+
+    <div class="hero-visual reveal is-visible" data-parallax="0.035" aria-hidden="true">
+      <div class="diagram-paper">
+        <p class="diagram-label">ANATOMY OF A USEFUL MODEL</p>
+        <svg viewBox="0 0 540 430" role="img" aria-label="Hand-drawn loop connecting data, environments, evaluation, and deployment">
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L9,3 z" fill="currentColor"/>
+            </marker>
+          </defs>
+          <path class="orbit orbit-one" d="M89 217C112 78 305 44 430 131C535 205 469 356 309 375C151 394 52 313 89 217Z"/>
+          <path class="orbit orbit-two" d="M145 310C74 218 147 106 278 92C426 76 497 177 433 287C377 382 217 393 145 310Z"/>
+          <path class="arrow-path" d="M111 174C150 118 197 99 252 93" marker-end="url(#arrow)"/>
+          <path class="arrow-path" d="M382 115C437 153 456 204 450 252" marker-end="url(#arrow)"/>
+          <path class="arrow-path" d="M404 318C344 362 269 370 209 342" marker-end="url(#arrow)"/>
+          <circle cx="109" cy="216" r="43"/>
+          <circle cx="292" cy="91" r="48"/>
+          <circle cx="443" cy="273" r="48"/>
+          <circle cx="169" cy="329" r="48"/>
+          <text x="109" y="212" text-anchor="middle">DATA</text>
+          <text x="109" y="229" text-anchor="middle">+ SIGNAL</text>
+          <text x="292" y="87" text-anchor="middle">RL</text>
+          <text x="292" y="104" text-anchor="middle">ENVIRONMENTS</text>
+          <text x="443" y="269" text-anchor="middle">EVALUATE</text>
+          <text x="443" y="286" text-anchor="middle">FAILURES</text>
+          <text x="169" y="325" text-anchor="middle">SHIP +</text>
+          <text x="169" y="342" text-anchor="middle">OBSERVE</text>
+          <path class="scribble" d="M252 222c24-47 63-49 83-20 21 31-9 77-53 70-35-5-46-29-30-50Z"/>
+          <text class="center-text" x="291" y="231" text-anchor="middle">LEARN</text>
+          <text class="center-text" x="291" y="250" text-anchor="middle">THE LOOP</text>
+        </svg>
+        <p class="diagram-note">No model is finished.<br>Only better observed.</p>
+      </div>
+      <span class="tape tape-top"></span>
+      <span class="tape tape-bottom"></span>
+    </div>
+
+    <div class="hero-metrics reveal is-visible">
+      <div><strong>6+</strong><span>years building<br>applied AI</span></div>
+      <div><strong>80%</strong><span>faster model<br>deployment</span></div>
+      <div><strong>13→5</strong><span>task-specific<br>perplexity</span></div>
+    </div>
+    <a class="scroll-cue" href="#manifesto"><span>Scroll to explore</span><i aria-hidden="true"></i></a>
+  </header>
+
+  <main id="main">
+    <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title">
+      <p class="section-index">01 / Point of view</p>
+      <div class="manifesto-copy reveal">
+        <svg class="quote-mark" viewBox="0 0 100 82" aria-hidden="true"><path d="M37 0C15 14 2 35 2 57c0 17 9 25 21 25 12 0 21-9 21-21 0-11-8-20-19-20 3-12 11-23 22-33L37 0Zm53 0C68 14 55 35 55 57c0 17 9 25 21 25 12 0 21-9 21-21 0-11-8-20-19-20 3-12 11-23 22-33L90 0Z"/></svg>
+        <h2 id="manifesto-title">The interesting work begins where the demo ends.</h2>
+        <p>I care about the full learning loop: the data we choose, the worlds we ask models to navigate, the failures we measure, and the systems that carry those lessons into production.</p>
+      </div>
+      <p class="side-note reveal">Research should leave the notebook.<br><span>— VK</span></p>
+    </section>
+
+    <section class="notes" id="notes" aria-labelledby="notes-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-index">02 / Field notes</p>
+          <h2 id="notes-title">Ideas from the workbench</h2>
+        </div>
+        <p>Notes on alignment, RL environments, and the signals that help language models improve through experience.</p>
+      </div>
+
+      <div class="note-grid">
+        <article class="note-card note-featured reveal">
+          <a href="https://blog.artofcyberai.com/post-evals-rl-environments.html" aria-label="Read issue one: Evals and RL environments are the same machine with different jobs">
+            <div class="note-meta"><span>Evals + RL</span><time datetime="2026-08-13">Issue 01 / 09</time></div>
+            <div class="note-sketch note-sketch-alignment" aria-hidden="true">
+              <span class="scale-beam"></span><span class="scale-left"></span><span class="scale-right"></span><span class="scale-base"></span>
+              <small>preference</small><small>capability</small>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h1 class="card-title grad h1x">Vikram Kharvi<h1>
-                <p class="card-text"><small class="text-muted">AI Researcher</small></p>
-                <p class="card-text">I build AI systems - veni vidi vici<h5>Want to collaborate reach out to me at </h5>
-                  <a href='https://www.linkedin.com/in/vikramai/' class="hrefWhite"><i style="font-size: 8em;" class="bi bi-linkedin m-3"></i></a>
-                  <a href='https://github.com/VikramKharvi' id="projects" class="hrefWhite"><i style="font-size: 5em;" class="bi bi-github m-3"></i></a>
-                </p>
-              </div>
-            </div>
+            <h3>One machine. Two different jobs.</h3>
+            <p>Prompt, environment, and grader form the shared architecture underneath evaluation and reinforcement learning.</p>
+            <span class="read-link">Read issue 01 <b>↗</b></span>
+          </a>
+        </article>
+
+        <div class="note-focus reveal">
+          <p><i aria-hidden="true"></i> Current research focus</p>
+          <h3>What the environment makes observable</h3>
+          <ul>
+            <li><span>01</span> Planning across multiple steps</li>
+            <li><span>02</span> Choosing and using the right tools</li>
+            <li><span>03</span> Recovering when an action fails</li>
+            <li><span>04</span> Reaching a verifiable outcome</li>
+          </ul>
+          <a href="https://blog.artofcyberai.com/">Read the full research log <b>→</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-strip" aria-label="Expanded field notes">
+      <article class="field-note reveal" id="alignment-note">
+        <div class="article-kicker"><span>01</span> The shared structure</div>
+        <div>
+          <h3>Measurement and learning belong in one conversation.</h3>
+          <p>Evals tell researchers where a model is. RL environments create the experiences that move it. The nine-part series begins with the architecture they share, then follows the signal through graders, long-horizon agents, continual learning, human judgment, and trajectory design.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="work-intro reveal">
+        <p class="section-index">03 / Selected work</p>
+        <h2 id="work-title">Building across the whole AI stack.</h2>
+        <p>Research, data, infrastructure, deployment—the hard problems rarely respect team boundaries.</p>
+      </div>
+
+      <div class="timeline" role="list">
+        <article class="timeline-item reveal" role="listitem">
+          <div class="timeline-date">2025—Now</div>
+          <div class="timeline-marker" aria-hidden="true"><span></span></div>
+          <div class="timeline-copy">
+            <div class="role-heading"><h3>Senior AI/ML Engineer</h3><p>Labelbox</p></div>
+            <p>Translating frontier-lab requirements into production RL data and environments; evaluating capability gaps across terminal, software, and cognitive tasks.</p>
+            <div class="tag-row"><span>RL gyms</span><span>Evaluation</span><span>RLHF / RLAIF</span></div>
+          </div>
+        </article>
+        <article class="timeline-item reveal" role="listitem">
+          <div class="timeline-date">2024—2025</div>
+          <div class="timeline-marker" aria-hidden="true"><span></span></div>
+          <div class="timeline-copy">
+            <div class="role-heading"><h3>Principal AI Developer</h3><p>HTC Inc</p></div>
+            <p>Built hot-swap model adapters that cut deployment time by 80% and architected an end-to-end AI workflow management system.</p>
+            <div class="tag-row"><span>Model adapters</span><span>Fine-tuning</span><span>MLOps</span></div>
+          </div>
+        </article>
+        <article class="timeline-item reveal" role="listitem">
+          <div class="timeline-date">2023—2024</div>
+          <div class="timeline-marker" aria-hidden="true"><span></span></div>
+          <div class="timeline-copy">
+            <div class="role-heading"><h3>Senior Applied AI Scientist</h3><p>Usable Machines</p></div>
+            <p>Built on the WhiteRabbitNeo foundation model and reduced task perplexity from 13 to 5 through preference optimization and task-specific fine-tuning.</p>
+            <div class="tag-row"><span>Foundation models</span><span>RLHF / RLAIF</span><span>Fine-tuning</span></div>
+          </div>
+        </article>
+        <article class="timeline-item reveal" role="listitem">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-marker" aria-hidden="true"><span></span></div>
+          <div class="timeline-copy">
+            <div class="role-heading"><h3>Adjunct Lecturer, NLP</h3><p>Northwestern University</p></div>
+            <p>Created a build-an-LLM course and researched controlled legal-text generation with T5, reaching a ROUGE-L F1 score of 0.44.</p>
+            <div class="tag-row"><span>NLP</span><span>Teaching</span><span>T5</span></div>
+          </div>
+        </article>
+        <article class="timeline-item reveal" role="listitem">
+          <div class="timeline-date">2020—2021</div>
+          <div class="timeline-marker" aria-hidden="true"><span></span></div>
+          <div class="timeline-copy">
+            <div class="role-heading"><h3>Principal AI Developer</h3><p>Code Techniq</p></div>
+            <p>Led an eight-person engineering team, built browser-based vision systems, and designed NLP pipelines for knowledge and medical applications.</p>
+            <div class="tag-row"><span>BERT</span><span>TensorFlow.js</span><span>ML systems</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-paper reveal">
+        <p class="section-index">04 / About</p>
+        <div class="about-grid">
+          <h2 id="about-title">Researcher’s curiosity.<br>Engineer’s discipline.</h2>
+          <div class="about-copy">
+            <p>I’m Vikram Kharvi, an applied AI researcher and engineer in California. I’ve worked across the AI lifecycle—from training and preference optimization to evaluation, deployment, and monitoring.</p>
+            <p>I hold a Master of Artificial Intelligence from Northwestern University and a Bachelor of Information Science Engineering from PES University.</p>
           </div>
         </div>
-        <div class="alert display-1 black text-white m-5 app" >Projects</div>
-        <div class="card mb-3 black glow border-5 text-white m-5 border p-3 app">
-          <div class="row">
-            <div class="col-md-2">
-              <img src="images/digibrain.jpg" class="img-fluid rounded-circle" alt="Cinque Terre">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h1 class="card-title rainbow-text h1x">Hyper-Reality<h1>
-                <p class="card-text"><small class="text-muted">Place where you can meet real-humans in virtual world</small></p>
-                <p class="card-text">A multimodel project used various generative models and Transformers to create a fake human. All it needs 30 seconds of Voice data, A picture and messaging data like WhatsApp or Telegram</p>
-                <small class="text-muted">Currently under-development</small>
-                <a class="nav-link btn btn-outline-dark text-white card-footer mt-3" href="#contact"><h3>Know more</h3></a>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 black glow border-5 text-white m-5 border p-3 app">
-            <div class="row">
-              <div class="col-md-2">
-                <img src="images/facerecognition.jpg" class="img-fluid rounded-circle" alt="Cinque Terre">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h1 class="card-title rainbow-text h1x">Face Cognise<h1>
-                  <p class="card-text"><small class="text-muted">TF JS based face mesh</small></p>
-                  <p class="card-text">Uses TF JS library to have face mesh which predicts wide varity of facial expresions what is traditionally not possible with image based training</p>
-                  <small class="text-muted">Currently under-development</small>
-                  <a class="nav-link btn btn-outline-dark text-white card-footer mt-3" href="#contact"><h3>Know more</h3></a>
-                </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 black glow border-5 text-white m-5 border p-3 app">
-              <div class="row">
-                <div class="col-md-2">
-                  <img src="images/qa.jpg" class="img-fluid rounded-circle" alt="Cinque Terre">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h1 class="card-title rainbow-text h1x">Ask me! Q-A<h1>
-                    <p class="card-text"><small class="text-muted">BERT On Browser - Yes you heard it right!</small></p>
-                    <p class="card-text">Fined-Tuned BERT trained to answer questions from a given passage. Data you entered stays in browser, computes in browser and predicts in browser.</p>
-                      <a class="nav-link card-footer btn btn-outline-dark text-white mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBERT" aria-expanded="false" aria-controls="collapseBERT">
-                        <h3>Try Now!</h3>
-                      </a>
-                    <div class="collapse mt-5" id="collapseBERT">
-                      <div class="card card-body black">
-                        <div class="mb-3">
-                          <input type="text" class="form-control black text-white glow makeitblack" id="question" placeholder="Enter your question">
-                        </div>
-                        <div class="mb-3">
-                          <textarea class="form-control black text-white glow makeitblack" id="context" placeholder="Enter your context" rows="3"></textarea>
-                        </div>
-                        <div class="mb-3">
-                          <button class="btn btn-dark mb-3" onclick="ask()"><h3>Ask!</h3></button>
-                        </div>
-                        <div class="mb-3">
-                          <p id="ans"></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3 black glow border-5 text-white m-5 border p-3 app">
-                <div class="row">
-                  <div class="col-md-2">
-                    <img src="images/mercury.jpg" class="img-fluid" alt="Cinque Terre">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h1 class="card-title rainbow-text h1x">Mercury GPT-P<h1>
-                      <p class="card-text"><small class="text-muted">AI-Driven phishing email system</small></p>
-                      <p class="card-text">Penerate through email security defense and phish victims with effective rate of 74%</p>
-                        <a class="nav-link card-footer btn btn-outline-dark text-white mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMercury" aria-expanded="false" aria-controls="collapseMercury">
-                          <h3>Watch Demo</h3>
-                        </a>
-                      <div class="collapse mt-5" id="collapseMercury">
-                        <div class="card card-body black">
-                          <video height="540" controls>
-                            <source src="video.mp4" type="video/mp4">
-                          </video>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              <div class="container contact-form glow border" id="contact">
-                <div class="contact-image">
-                    <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-                </div>
-                <form>
-                    <h3>Drop a mail</h3>
-                          <h2 class='text-white text-center align-items-center justify-content-center'>Email at <a href="mailto:vikram984511@gmail.com">vikram984511@gmail.com</a></h2>
-                </form>
+        <div class="credential-row">
+          <div><span>Education</span><strong>Northwestern University</strong><small>MS, Artificial Intelligence · 3.8/4</small></div>
+          <div><span>Recognition</span><strong>Hack2Innovate Winner</strong><small>Samsung · NVIDIA · PWC · T-Hub</small></div>
+          <div><span>Certification</span><strong>NVIDIA Agentic AI</strong><small>Certified Professional</small></div>
+        </div>
+      </div>
+
+      <div class="skills-marquee" aria-label="Technical skills">
+        <div>
+          <span>PYTORCH</span><i>✦</i><span>TRANSFORMERS</span><i>✦</i><span>RLHF</span><i>✦</i><span>RL ENVIRONMENTS</span><i>✦</i><span>AGENT EVALUATION</span><i>✦</i><span>KUBERNETES</span><i>✦</i><span>PYTHON</span><i>✦</i><span>MODEL EVALUATION</span><i>✦</i>
+          <span>PYTORCH</span><i>✦</i><span>TRANSFORMERS</span><i>✦</i><span>RLHF</span><i>✦</i><span>RL ENVIRONMENTS</span><i>✦</i><span>AGENT EVALUATION</span><i>✦</i><span>KUBERNETES</span><i>✦</i><span>PYTHON</span><i>✦</i><span>MODEL EVALUATION</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <p class="section-index">05 / Let’s talk</p>
+      <h2>Have a hard AI problem?</h2>
+      <a class="footer-email" href="mailto:vikramkrishnakharvi@gmail.com">vikramkrishnakharvi@gmail.com <span>↗</span></a>
     </div>
-        <nav class="navbar navbar-dark bg-darkmt-5">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"> &copy; Desgined by - Vikram Kharvi</a>
-          </div>
-        </nav>
+    <div class="footer-bottom">
+      <p>Vikram Kharvi · Applied AI Researcher & Engineer</p>
+      <p>California · <span id="local-time">Pacific time</span></p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
 
-<!-- Make sure your page supports utf-8 characterset. -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- Load TensorFlow.js. This is required to use the qna model. -->
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
-<!-- Load the qna model. -->
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/qna"> </script>
-
-<!-- Place your code in the script tag below. You can also use an external .js file -->
-<script>
-  async function ask() {
-  // Notice there is no 'import' statement. 'qna' and 'tf' is
-  // available on the index-page because of the script tag above.
-  // Who is the CEO of Google?
-  // Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and Facebook. Google was founded in September 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University in California. Together they own about 14 percent of its shares and control 56 percent of the stockholder voting power through supervoting stock. They incorporated Google as a California privately held company on September 4, 1998, in California. Google was then reincorporated in Delaware on October 22, 2002. An initial public offering (IPO) took place on August 19, 2004, and Google moved to its headquarters in Mountain View, California, nicknamed the Googleplex. In August 2015, Google announced plans to reorganize its various interests as a conglomerate called Alphabet Inc. Google is Alphabet's leading subsidiary and will continue to be the umbrella company for Alphabet's Internet interests. Sundar Pichai was appointed CEO of Google, replacing Larry Page who became the CEO of Alphabet.
-
-const model = await qna.load();
-const passage = document.getElementById("context").value
-const question = document.getElementById("question").value
-const answers = await model.findAnswers(question, passage);
-console.log(answers);
-document.getElementById("ans").innerHTML = answers[0]['text'];
-console.log(answers[0]['text']);
-}
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
-</script>
-        <script>
-            window.sr = ScrollReveal();
-            sr.reveal('.navbar',{
-              duration:2000,
-              origin:'bottom'
-            })
-            window.sr = ScrollReveal();
-            sr.reveal('.leftimage',{
-              duration:4000,
-              origin:'left',
-              distance:'300px',
-              viewFactor:0.8
-            })
-            window.sr = ScrollReveal();
-            sr.reveal('.rightimage',{
-              duration:3000,
-              origin:'right',
-              distance:'300px',
-              viewFactor:0.8
-            })
-            window.sr = ScrollReveal();
-            sr.reveal('.caption',{
-              duration:5000,
-              origin:'bottom',
-              distance:'300px',
-              viewFactor:0.8
-            })
-            window.sr = ScrollReveal();
-            sr.reveal('.app',{
-              duration:2000,
-              origin:'bottom',
-              distance:'300px',
-              viewFactor:0.5
-            })
-            var nav=document.querySelector('nav')
-            window.addEventListener('scroll',function(){
-              if (window.pageYOffset>100){
-                nav.classList.add('bg-dark','shadow');
-              } else {
-                nav.classList.remove('bg-dark','shadow');
-              }
-            })
-        </script>
-    </body>
+  <script src="script.js?v=browser-ai1"></script>
+</body>
 </html>
